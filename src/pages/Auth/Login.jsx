@@ -2,6 +2,7 @@ import "./Login.css";
 import Input from "../../components/UI/Input";
 import Button from "../../components/UI/Button";
 import { images } from "../../assets/images";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -9,7 +10,7 @@ const Login = () => {
       <div className="auth-card">
         <div className="auth-header">
           <img src={images.calendar} alt="calendar" />
-          <h2>SmartSchedule</h2>
+          <h2>ConsultHub</h2>
         </div>
 
         <p className="auth-subtitle">Sign in to your account</p>
@@ -31,7 +32,10 @@ const Login = () => {
         </Button>
 
         <p className="register">
-          Don’t have an account? <span>Register as Student</span>
+          Don’t have an account?{" "}
+          <Link to="/register" className="link">
+            Register as Student
+          </Link>
         </p>
 
         <p className="note">
