@@ -22,9 +22,9 @@ const Login = () => {
           placeholder="Enter your password"
         />
 
-        <a href="#" className="forgot">
+        <Link to="/forgot-password" className="forgot">
           Forgot password?
-        </a>
+        </Link>
 
         <Button>
           <img src={images.vector} alt="" className="btn-icon" />
