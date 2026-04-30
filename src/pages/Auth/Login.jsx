@@ -1,0 +1,45 @@
+import "./Login.css";
+import Input from "../../components/UI/Input";
+import Button from "../../components/UI/Button";
+import { images } from "../../assets/images";
+
+const Login = () => {
+  return (
+    <div className="auth-page">
+      <div className="auth-card">
+        <div className="auth-header">
+          <img src={images.calendar} alt="calendar" />
+          <h2>SmartSchedule</h2>
+        </div>
+
+        <p className="auth-subtitle">Sign in to your account</p>
+
+        <Input label="Email" placeholder="Enter your email" />
+        <Input
+          label="Password"
+          type="password"
+          placeholder="Enter your password"
+        />
+
+        <a href="#" className="forgot">
+          Forgot password?
+        </a>
+
+        <Button>
+          <img src={images.vector} alt="" className="btn-icon" />
+          Sign In
+        </Button>
+
+        <p className="register">
+          Don’t have an account? <span>Register as Student</span>
+        </p>
+
+        <p className="note">
+          Lecturer accounts are created by administrators
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Login;
