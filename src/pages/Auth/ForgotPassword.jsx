@@ -10,7 +10,7 @@ const ForgotPassword = () => {
       <div className="auth-card">
         <div className="auth-header">
           <img src={images.calendar} alt="calendar" />
-          <h2>ConsultHub</h2>
+          <h2>SmartSchedule</h2>
         </div>
 
         <h3 className="auth-title">Forgot your password?</h3>

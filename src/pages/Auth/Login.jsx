@@ -10,7 +10,7 @@ const Login = () => {
       <div className="auth-card">
         <div className="auth-header">
           <img src={images.calendar} alt="calendar" />
-          <h2>ConsultHub</h2>
+          <h2>SmartSchedule</h2>
         </div>
 
         <p className="auth-subtitle">Sign in to your account</p>
