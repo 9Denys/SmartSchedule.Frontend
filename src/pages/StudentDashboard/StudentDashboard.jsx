@@ -5,8 +5,11 @@ import DashboardCard from "../../components/common/DashboardCard";
 import QuickAction from "../../components/common/QuickAction";
 import ConsultationItem from "../../components/common/ConsultationItem";
 import { images } from "../../assets/images";
+import { useNavigate } from "react-router-dom";
 
 const StudentDashboard = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="dashboard-page">
       <Header />
@@ -57,6 +60,7 @@ const StudentDashboard = () => {
                 title="Find Teachers"
                 text="Browse available teachers"
                 color="action-blue"
+                onClick={() => navigate("/teachers")}
               />
 
               <QuickAction

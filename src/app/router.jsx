@@ -3,6 +3,7 @@ import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
 import ForgotPassword from "../pages/Auth/ForgotPassword";
 import StudentDashboard from "../pages/StudentDashboard/StudentDashboard";
+import FindTeachers from "../pages/FindTeachers/FindTeachers";
 
 const Router = () => {
   return (
@@ -12,6 +13,7 @@ const Router = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/dashboard" element={<StudentDashboard />} />
+        <Route path="/teachers" element={<FindTeachers />} />
       </Routes>
     </BrowserRouter>
   );

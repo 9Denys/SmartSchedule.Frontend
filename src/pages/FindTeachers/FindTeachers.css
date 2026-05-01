@@ -1,0 +1,149 @@
+.find-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #020617;
+}
+
+.find-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.find-title {
+  margin-bottom: 28px;
+}
+
+.find-title h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.find-title p {
+  margin: 0;
+  font-size: 15px;
+  color: #475569;
+}
+
+.find-controls {
+  display: grid;
+  grid-template-columns: 1fr 190px;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.search-input,
+.department-select {
+  height: 44px;
+  padding: 0 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #ffffff;
+  font-size: 14px;
+  color: #020617;
+  outline: none;
+}
+
+.search-input:focus,
+.department-select:focus {
+  border-color: #2563eb;
+}
+
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.teacher-card {
+  min-height: 118px;
+  padding: 20px 22px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teacher-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.teacher-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacher-avatar img {
+  width: 22px;
+  height: 22px;
+}
+
+.teacher-card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.teacher-card p {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.teacher-slots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.teacher-slots img {
+  width: 16px;
+  height: 16px;
+}
+
+.teacher-slots span {
+  font-size: 13px;
+  color: #334155;
+}
+
+.view-btn {
+  align-self: flex-end;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 1000px) {
+  .teachers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .find-controls,
+  .teachers-grid {
+    grid-template-columns: 1fr;
+  }
+}

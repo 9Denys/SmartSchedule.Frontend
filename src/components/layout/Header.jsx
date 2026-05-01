@@ -1,11 +1,10 @@
 import { images } from "../../assets/images";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // потом тут будет очистка токена
     navigate("/");
   };
 
@@ -18,20 +17,35 @@ const Header = () => {
         </div>
 
         <nav className="header-nav">
-          <a className="nav-link active">
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             <img src={images.dashboard} alt="" />
             Dashboard
-          </a>
+          </NavLink>
 
-          <a className="nav-link">
+          <NavLink
+            to="/teachers"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             <img src={images.people} alt="" />
             Find Teachers
-          </a>
+          </NavLink>
 
-          <a className="nav-link">
+          <NavLink
+            to="/bookings"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             <img src={images.bookings} alt="" />
             My Bookings
-          </a>
+          </NavLink>
         </nav>
 
         <div className="header-user">
