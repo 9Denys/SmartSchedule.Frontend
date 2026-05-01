@@ -4,6 +4,7 @@ import Register from "../pages/Auth/Register";
 import ForgotPassword from "../pages/Auth/ForgotPassword";
 import StudentDashboard from "../pages/StudentDashboard/StudentDashboard";
 import FindTeachers from "../pages/FindTeachers/FindTeachers";
+import MyBookings from "../pages/MyBookings/MyBookings";
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/dashboard" element={<StudentDashboard />} />
         <Route path="/teachers" element={<FindTeachers />} />
+        <Route path="/bookings" element={<MyBookings />} />
       </Routes>
     </BrowserRouter>
   );

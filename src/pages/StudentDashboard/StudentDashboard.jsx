@@ -68,6 +68,7 @@ const StudentDashboard = () => {
                 title="My Bookings"
                 text="View and manage bookings"
                 color="action-green"
+                onClick={() => navigate("/bookings")}
               />
             </div>
           </DashboardCard>

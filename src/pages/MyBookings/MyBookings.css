@@ -1,0 +1,134 @@
+.bookings-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #020617;
+}
+
+.bookings-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.bookings-title {
+  margin-bottom: 28px;
+}
+
+.bookings-title h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.bookings-title p {
+  margin: 0;
+  font-size: 15px;
+  color: #475569;
+}
+
+.bookings-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.bookings-card-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.bookings-card-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.bookings-table {
+  padding: 18px 24px;
+}
+
+.bookings-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1.1fr 0.9fr 0.9fr 0.7fr;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.bookings-head {
+  padding-top: 4px;
+  padding-bottom: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.teacher-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.teacher-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacher-avatar img {
+  width: 17px;
+  height: 17px;
+}
+
+.teacher-cell strong {
+  font-size: 14px;
+}
+
+.icon-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0f172a;
+  font-size: 14px;
+}
+
+.icon-cell img {
+  width: 15px;
+  height: 15px;
+  filter: brightness(0) saturate(100%);
+  opacity: 0.45;
+}
+
+.cancel-btn {
+  width: fit-content;
+  padding: 7px 14px;
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background: #fef2f2;
+}
+
+@media (max-width: 900px) {
+  .bookings-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .bookings-head {
+    display: none;
+  }
+}
