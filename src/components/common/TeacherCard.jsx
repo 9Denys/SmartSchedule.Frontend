@@ -1,6 +1,6 @@
 import { images } from "../../assets/images";
 
-const TeacherCard = ({ name, department, slots }) => {
+const TeacherCard = ({ name, department, slots, onClick }) => {
   return (
     <div className="teacher-card">
       <div className="teacher-info">
@@ -19,7 +19,9 @@ const TeacherCard = ({ name, department, slots }) => {
         </div>
       </div>
 
-      <button className="view-btn">View</button>
+      <button className="view-btn" onClick={onClick}>
+        View
+      </button>
     </div>
   );
 };

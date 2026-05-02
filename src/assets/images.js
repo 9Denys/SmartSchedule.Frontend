@@ -9,6 +9,7 @@ import bookings from "./images/bookings.png";
 import note from "./images/note.png";
 import clock from "./images/clock.png";
 import exit from "./images/exit.png";
+import file from "./images/file.png";
 
 export const images = {
   calendar,
@@ -21,4 +22,5 @@ export const images = {
   note,
   clock,
   exit,
+  file,
 };

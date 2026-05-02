@@ -5,6 +5,7 @@ import ForgotPassword from "../pages/Auth/ForgotPassword";
 import StudentDashboard from "../pages/StudentDashboard/StudentDashboard";
 import FindTeachers from "../pages/FindTeachers/FindTeachers";
 import MyBookings from "../pages/MyBookings/MyBookings";
+import TeacherDetails from "../pages/TeacherDetails/TeacherDetails";
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
         <Route path="/dashboard" element={<StudentDashboard />} />
         <Route path="/teachers" element={<FindTeachers />} />
         <Route path="/bookings" element={<MyBookings />} />
+        <Route path="/teachers/:id" element={<TeacherDetails />} />
       </Routes>
     </BrowserRouter>
   );
