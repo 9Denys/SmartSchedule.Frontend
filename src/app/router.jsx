@@ -11,6 +11,7 @@ import TeacherSchedule from "../pages/TeacherSchedule/TeacherSchedule";
 import TeacherBookings from "../pages/TeacherBookings/TeacherBookings";
 import AdminDashboard from "../pages/AdminDashboard/AdminDashboard";
 import AdminSystemControl from "../pages/AdminSystemControl/AdminSystemControl";
+import AdminUserManagement from "../pages/AdminUserManagement/AdminUserManagement";
 
 const Router = () => {
   return (
@@ -27,6 +28,7 @@ const Router = () => {
         <Route path="/teacher/schedule" element={<TeacherSchedule />} />
         <Route path="/teacher/bookings" element={<TeacherBookings />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/admin/users" element={<AdminUserManagement />} />
         <Route path="/admin/system" element={<AdminSystemControl />} />
       </Routes>
     </BrowserRouter>
