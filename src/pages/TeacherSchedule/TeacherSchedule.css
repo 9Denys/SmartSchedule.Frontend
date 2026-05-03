@@ -1,0 +1,205 @@
+.teacher-schedule-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.teacher-schedule-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.schedule-title {
+  margin-bottom: 28px;
+}
+
+.schedule-title h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.schedule-title p {
+  margin: 0;
+  font-size: 15px;
+  color: #475569;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 24px;
+}
+
+.schedule-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.add-slot-card {
+  min-height: 460px;
+}
+
+.schedule-card-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.schedule-card-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.schedule-form {
+  padding: 24px;
+}
+
+.schedule-form label {
+  display: block;
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.field-with-icon {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.field-with-icon input,
+.field-with-icon select {
+  width: 100%;
+  height: 46px;
+  padding: 0 44px 0 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 11px;
+  background: #ffffff;
+  color: #020617;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.field-with-icon input:focus,
+.field-with-icon select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.field-with-icon img {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.add-slot-btn {
+  width: 100%;
+  height: 46px;
+  margin-top: 2px;
+  border: none;
+  border-radius: 11px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.add-slot-btn:hover {
+  background: #1d4ed8;
+}
+
+.slots-list-wrapper {
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.schedule-slot {
+  min-height: 56px;
+  padding: 0 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slot-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slot-left img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.55;
+}
+
+.slot-left strong {
+  font-size: 15px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.available {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status.booked {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+.delete-slot-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.delete-slot-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.slots-date-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.slots-date-group h3 {
+  margin: 8px 0 2px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #334155;
+}
+
+@media (max-width: 900px) {
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -7,6 +7,7 @@ import FindTeachers from "../pages/FindTeachers/FindTeachers";
 import MyBookings from "../pages/MyBookings/MyBookings";
 import TeacherDetails from "../pages/TeacherDetails/TeacherDetails";
 import TeacherDashboard from "../pages/TeacherDashboard/TeacherDashboard";
+import TeacherSchedule from "../pages/TeacherSchedule/TeacherSchedule";
 
 const Router = () => {
   return (
@@ -20,6 +21,7 @@ const Router = () => {
         <Route path="/bookings" element={<MyBookings />} />
         <Route path="/teachers/:id" element={<TeacherDetails />} />
         <Route path="/teacher" element={<TeacherDashboard />} />
+        <Route path="/teacher/schedule" element={<TeacherSchedule />} />
       </Routes>
     </BrowserRouter>
   );

@@ -10,6 +10,9 @@ const Header = ({ role = "student" }) => {
 
   const isTeacher = role === "teacher";
 
+  const linkClass = ({ isActive }) =>
+    isActive ? "nav-link active" : "nav-link";
+
   return (
     <header className="dashboard-header">
       <div className="header-inner">
@@ -21,34 +24,34 @@ const Header = ({ role = "student" }) => {
         <nav className="header-nav">
           {isTeacher ? (
             <>
-              <NavLink to="/teacher" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+              <NavLink to="/teacher" end className={linkClass}>
                 <img src={images.dashboard} alt="" />
                 Dashboard
               </NavLink>
 
-              <NavLink to="/teacher/schedule" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+              <NavLink to="/teacher/schedule" className={linkClass}>
                 <img src={images.clock} alt="" />
                 Schedule
               </NavLink>
 
-              <NavLink to="/teacher/bookings" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+              <NavLink to="/teacher/bookings" className={linkClass}>
                 <img src={images.note} alt="" />
                 Booked Slots
               </NavLink>
             </>
           ) : (
             <>
-              <NavLink to="/dashboard" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+              <NavLink to="/dashboard" end className={linkClass}>
                 <img src={images.dashboard} alt="" />
                 Dashboard
               </NavLink>
 
-              <NavLink to="/teachers" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+              <NavLink to="/teachers" className={linkClass}>
                 <img src={images.people} alt="" />
                 Find Teachers
               </NavLink>
 
-              <NavLink to="/bookings" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+              <NavLink to="/bookings" className={linkClass}>
                 <img src={images.bookings} alt="" />
                 My Bookings
               </NavLink>
