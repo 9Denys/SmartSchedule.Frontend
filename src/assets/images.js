@@ -2,7 +2,6 @@ import calendar from "./images/calendar.png";
 import vector from "./images/vector.png";
 import register from "./images/register.png";
 import mail from "./images/mail.png";
-
 import dashboard from "./images/dashboard.png";
 import people from "./images/people.png";
 import bookings from "./images/bookings.png";

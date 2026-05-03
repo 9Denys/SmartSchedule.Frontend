@@ -8,6 +8,7 @@ import MyBookings from "../pages/MyBookings/MyBookings";
 import TeacherDetails from "../pages/TeacherDetails/TeacherDetails";
 import TeacherDashboard from "../pages/TeacherDashboard/TeacherDashboard";
 import TeacherSchedule from "../pages/TeacherSchedule/TeacherSchedule";
+import TeacherBookings from "../pages/TeacherBookings/TeacherBookings";
 
 const Router = () => {
   return (
@@ -22,6 +23,7 @@ const Router = () => {
         <Route path="/teachers/:id" element={<TeacherDetails />} />
         <Route path="/teacher" element={<TeacherDashboard />} />
         <Route path="/teacher/schedule" element={<TeacherSchedule />} />
+        <Route path="/teacher/bookings" element={<TeacherBookings />} />
       </Routes>
     </BrowserRouter>
   );

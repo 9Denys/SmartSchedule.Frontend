@@ -1,0 +1,124 @@
+.teacher-bookings-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #020617;
+}
+
+.teacher-bookings-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.teacher-bookings-title {
+  margin-bottom: 28px;
+}
+
+.teacher-bookings-title h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.teacher-bookings-title p {
+  margin: 0;
+  font-size: 15px;
+  color: #475569;
+}
+
+.teacher-bookings-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.teacher-bookings-card-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.teacher-bookings-card-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.teacher-bookings-body {
+  padding: 22px 24px;
+}
+
+.booking-date-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.booking-date-title img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.55;
+}
+
+.teacher-booking-item {
+  max-width: 560px;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.booking-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-avatar img {
+  width: 22px;
+  height: 22px;
+}
+
+.booking-info h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.booking-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 7px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.booking-line img {
+  width: 15px;
+  height: 15px;
+  opacity: 0.6;
+}
+
+.booking-line img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  opacity: 0.6;
+  flex-shrink: 0;
+  filter: brightness(0) saturate(100%);
+}
