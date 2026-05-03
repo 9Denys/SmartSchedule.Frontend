@@ -1,0 +1,71 @@
+.teacher-dashboard-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.teacher-dashboard-content {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 56px 24px 40px;
+}
+
+.dashboard-title {
+  margin-bottom: 28px;
+}
+
+.dashboard-title h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.dashboard-title p {
+  margin: 0;
+  font-size: 15px;
+  color: #64748b;
+}
+
+.teacher-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.teacher-dashboard-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+}
+
+.teacher-dashboard-grid .dashboard-card {
+  min-height: 250px;
+}
+
+.stat-icon.orange {
+  background: #ffedd5;
+}
+
+.stat-icon.orange img {
+  filter: none;
+}
+
+@media (max-width: 1100px) {
+  .teacher-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .teacher-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .teacher-dashboard-content {
+    padding: 36px 16px;
+  }
+
+  .teacher-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
