@@ -9,6 +9,7 @@ const Header = ({ role = "student" }) => {
   };
 
   const isTeacher = role === "teacher";
+  const isAdmin = role === "admin";
 
   const linkClass = ({ isActive }) =>
     isActive ? "nav-link active" : "nav-link";
@@ -22,7 +23,24 @@ const Header = ({ role = "student" }) => {
         </div>
 
         <nav className="header-nav">
-          {isTeacher ? (
+          {isAdmin ? (
+            <>
+              <NavLink to="/admin" end className={linkClass}>
+                <img src={images.dashboard} alt="" />
+                Dashboard
+              </NavLink>
+
+              <NavLink to="/admin/users" className={linkClass}>
+                <img src={images.people} alt="" />
+                Users
+              </NavLink>
+
+              <NavLink to="/admin/system" className={linkClass}>
+                <img src={images.file} alt="" />
+                System Control
+              </NavLink>
+            </>
+          ) : isTeacher ? (
             <>
               <NavLink to="/teacher" end className={linkClass}>
                 <img src={images.dashboard} alt="" />
@@ -61,8 +79,10 @@ const Header = ({ role = "student" }) => {
 
         <div className="header-user">
           <div className="user-info">
-            <strong>{isTeacher ? "Dr. Sarah Johnson" : "John Doe"}</strong>
-            <span>{isTeacher ? "Teacher" : "Student"}</span>
+            <strong>
+              {isAdmin ? "Admin User" : isTeacher ? "Dr. Sarah Johnson" : "John Doe"}
+            </strong>
+            <span>{isAdmin ? "Admin" : isTeacher ? "Teacher" : "Student"}</span>
           </div>
 
           <button className="logout-btn" onClick={handleLogout}>

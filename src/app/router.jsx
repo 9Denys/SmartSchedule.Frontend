@@ -9,6 +9,7 @@ import TeacherDetails from "../pages/TeacherDetails/TeacherDetails";
 import TeacherDashboard from "../pages/TeacherDashboard/TeacherDashboard";
 import TeacherSchedule from "../pages/TeacherSchedule/TeacherSchedule";
 import TeacherBookings from "../pages/TeacherBookings/TeacherBookings";
+import AdminDashboard from "../pages/AdminDashboard/AdminDashboard";
 
 const Router = () => {
   return (
@@ -24,6 +25,7 @@ const Router = () => {
         <Route path="/teacher" element={<TeacherDashboard />} />
         <Route path="/teacher/schedule" element={<TeacherSchedule />} />
         <Route path="/teacher/bookings" element={<TeacherBookings />} />
+        <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
     </BrowserRouter>
   );
