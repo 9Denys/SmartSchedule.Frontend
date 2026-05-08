@@ -19,7 +19,7 @@ const Header = ({ role = "student" }) => {
       <div className="header-inner">
         <div className="header-logo">
           <img src={images.calendar} alt="calendar" />
-          <span>ConsultHub</span>
+          <span>SmartSchedule</span>
         </div>
 
         <nav className="header-nav">
